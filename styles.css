@@ -3,9 +3,21 @@
     src: url(../sign-up-forms/resource/Norse-Bold.otf);
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #333;
+    height: 100%;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .cover {
@@ -46,15 +58,13 @@ body {
     position: absolute;
     bottom: 0;
     left: 50%;
+    width: 100%;
     transform: translate(-50%);
     text-align: center;
     color: white;
     box-sizing: border-box;
 }
 
-.footer p {
-    margin: 0;
-}
 
 .footer a {
     color: white;
@@ -63,4 +73,27 @@ body {
 h1 {
     font-family: Norse-Bold, sans-serif;
     color: red;
+}
+
+.main {
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    height: 100vh;
+    padding: 40px; /* dont like this */
+    gap: 20px;
+}
+
+.intro {
+    border: 2px solid black;
+}
+
+.form-container {
+    border: 2px solid red;
+}
+
+.login-link {
+    border: 2px solid orange;
 }
