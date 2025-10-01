@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Norse-Bold;
-    src: url(../sign-up-forms/resource/Norse-Bold.otf);
+    font-family: myFont;
+    src: url(../sign-up-forms/resources/Norse-Bold.otf);
 }
 
 * {
@@ -12,7 +12,7 @@
 body {
     font-family: sans-serif;
     line-height: 1.5;
-    background-color: #fff;
+    background-color: rgb(9, 18, 94);
     color: #333;
     height: 100%;
     display: flex;
@@ -21,11 +21,10 @@ body {
 
 }
 
-.cover {
+.left-section {
     position: relative;
     width: 40%;
     height: 100vh;
-    border: 2px solid red;
 }
 
 .cover-img {
@@ -33,7 +32,7 @@ body {
     height: 100%;
 }
 
-.logo-text {
+.cover-title {
     position: absolute;
     top: 35%;
     left: 50%;
@@ -43,83 +42,88 @@ body {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(5, 20, 57, 0.5);
     box-sizing: border-box;
     padding: 10px 20px;
 
 }
 
-.logo {
-    width: 48px;
-    height: auto;
+.cover-logo {
+    width: 10vh;
+    height: 10vh;
 }
 
-.footer {
-    border: 2px solid yellow;
+.cover-footer {
     position: absolute;
     bottom: 0;
     left: 50%;
     width: 100%;
     transform: translate(-50%);
     text-align: center;
-    color: white;
+    color: rgb(9, 18, 94);
     box-sizing: border-box;
 }
 
 
-.footer a {
-    color: white;
+.cover-footer a {
+    color: rgb(9, 18, 94);
 }
 
 h1 {
-    font-family: Norse-Bold, sans-serif;
-    color: red;
-}
-
-.main {
-    margin: 0 0 0 10px;
+    font-family: myFont;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
 }
 
 .right-section {
-    border: 2px solid blue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    background-color: rgb(151, 178, 194);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
     height: 100vh;
-    width: 100vh;
+    width: 80vh;
     padding: 40px 0 0 40px;
     gap: 20px;
 }
 
 .description {
-    border: 2px solid black;
-    height: 20vh;
-    width: 60vh;
+    font-size: 20px;
+    height: 25vh;
+    width: 65vh;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding-bottom: 20px;
 }
 
 .form-container {
-    border: 2px solid red;
     height: 40vh;
-    width: 75vh;
+    width: 90vh;
+    background-color: rgb(5, 20, 57);
+    border: 2px solid rgb(2, 15, 47);
+    border-radius: 5px;
+}
+
+.form-container input {
+    border-radius: 5px;
 }
 
 .form-container p {
-    margin-bottom: 10px;
+    margin: 5px 0 10px 10px;
 }
 
 .form-inputs {
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid rgba(181, 205, 230, 0.619);
 }
 
 .form-row {
     display: flex;
     gap: 0.2rem;
     margin-bottom: 1.5rem;
+    margin-left: 10px;
 }
 
 .input-group {
@@ -136,6 +140,7 @@ h1 {
     display: flex;
     justify-content: flex-start;
     padding-top: 10px;
+    margin-left: 10px;
 }
 
 .button-row button {
@@ -144,7 +149,14 @@ h1 {
 }
 
 .login-link {
-    border: 2px solid orange;
     height: 5vh;
     width: 55vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.login-link a {
+    text-decoration: none;
+    color: rgb(5, 20, 57);
 }
