@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="left-section">
+        <img src="resources/cover-med.jpg" alt="Cover Image" class="cover-img">
+        <div class="cover-title">
+            <img src="resources/odin-lined.png" alt="Logo" class="cover-logo">
+            <h1>Odin</h1>
+        </div>
+        <div class="cover-footer">
+            <p>Photo by <a href="https://unsplash.com/@linasilivanova">Polina Silivanova</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+        </div>
+    </div>
+    <div class="right-section">
+        <div class="description">
+            <p>This is not a real online service! You know you need something like this in 
+                your life to help you realize your deepest dreams. Sign up now to get started.</p>
+            <p class="disclaimer">This is a demo site. Please do not provide any personal or confidential information.</p>
+            <p>You know you want to.</p>
+        </div>
+        <div class="form-container">
+            <form action="#" method="post">
+                <p>Let's do this! <span class="disclaimer">*required fields</span></p>
+                <div class="form-inputs">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="first_name">*First Name:</label>
+                            <input type="text" id="first_name" name="first_name" required placeholder="John">
+                        </div>
+                        <div class="input-group">
+                            <label for="last_name">*Last Name:</label>
+                            <input type="text" id="last_name" name="last_name" required placeholder="Doe">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="email">*Email:</label>
+                            <input type="email" id="email" name="email" required placeholder="johndoe@mail.com">
+                        </div>
+                        <div class="input-group">
+                            <label for="phone_number">Phone Number:</label>
+                            <input type="tel" id="phone_number" name="phone_number" placeholder="(XXX) XXX-XXXX">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="password">*Password:</label>
+                            <input type="password" class="password" id="password" name="password" required placeholder="Enter your password" pattern=".{8,}" title="Password must be at least 8 characters long.">
+                        </div>
+                        <div class="input-group">
+                            <label for="confirm_password">*Confirm Password:</label>
+                            <input type="password" class="password" id="confirm_password" name="confirm_password" required placeholder="Confirm your password" pattern=".{8,}" title="Password must be at least 8 characters long.">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="button-row">
+                    <button type="submit">Create Account</button>
+                </div>
+            </form>
+        </div>
+        <div class="login-link">
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>    
+</body>
+</html>
