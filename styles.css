@@ -12,7 +12,7 @@
 body {
     font-family: sans-serif;
     line-height: 1.5;
-    background-color: rgb(9, 18, 94);
+    background-color: rgb(151, 178, 194);
     color: #333;
     height: 100%;
     display: flex;
@@ -34,7 +34,7 @@ body {
 
 .cover-title {
     position: absolute;
-    top: 35%;
+    top: 28%;
     left: 50%;
     width: 100%;
     transform: translate(-50%, -50%);
@@ -92,11 +92,16 @@ h1 {
 .description {
     font-size: 20px;
     height: 25vh;
-    width: 65vh;
+    width: 75vh;
     padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+}
+
+.disclaimer {
+    font-size: 12px;
+    color: rgb(93, 37, 4);
 }
 
 .form-container {
@@ -107,16 +112,38 @@ h1 {
     border-radius: 5px;
 }
 
-.form-container input {
-    border-radius: 5px;
-}
-
 .form-container p {
     margin: 5px 0 10px 10px;
 }
 
 .form-inputs {
     border-bottom: 2px solid rgba(181, 205, 230, 0.619);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input {
+    border-radius: 5px;
+    border-color: rgb(181, 205, 230);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: rgb(49, 137, 189);
+    box-shadow: 0 0 5px rgba(181, 205, 230, 0.619);
+}
+
+input:invalid {
+    border-color: rgb(255, 0, 0);
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+input:invalid:not(:focus) {
+    border-color: rgb(49, 137, 189);
+}
+
+input:valid {
+    border-color: rgb(49, 137, 189);
 }
 
 .form-row {
@@ -146,6 +173,14 @@ h1 {
 .button-row button {
     width: 164px;
     height: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(101, 162, 198);
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+.button-row button:active {
+    background-color: rgb(49, 137, 189);
 }
 
 .login-link {
